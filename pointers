@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int*a[5],i,j,b[5];
+	cout<<"Enter elements:";
+	for(i=0;i<5;i++)
+	{cout<<"\n";
+	cin>>b[i];	}
+	for(int k=0;k<5;k++)
+	{ a[k]=&b[k];
+	}
+	cout<<"\n"<<"You Entered:";
+	for(j=0;j<5;j++)
+	{cout<<"\n";
+	cout<<*a[j];
+	}
+	return 0;
+}
